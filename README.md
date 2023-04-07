@@ -2,4 +2,9 @@
 
 ## Node version
 
-Use node version 18.15.0 in this project.
+This project uses node version 18.15.0.
+```
+nvm use 18.15.0
+```
+
+
