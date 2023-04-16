@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3001/api/persons';
+const baseUrl = '/api/persons';
 
 const getContacts = () => {
   return axios
@@ -25,4 +25,6 @@ const deleteContact = contactId => {
     .delete(`${baseUrl}/${contactId}`);
 };
 
-export default { getContacts, saveContact, updateContact, deleteContact };
+const exportObj = { getContacts, saveContact, updateContact, deleteContact };
+
+export default exportObj;
